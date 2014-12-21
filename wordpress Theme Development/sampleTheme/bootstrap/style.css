@@ -1,0 +1,49 @@
+/*
+Theme Name: Bootstrap
+Theme URI: https://cvinfotech.com
+Author: akki
+Author URI: http://akashujjwal.wordpress.com
+Description: My Bootstrap 3 responsive theme
+Version: 1.0
+Text Domain: Bootstrap
+
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+Arcade WordPress Theme, Copyright 2014 cvinfotech
+
+Arcade is distributed under the terms of the GNU GPL
+*/
+@import url('css/bootstrap.min.css');
+
+body {
+	padding-bottom: 70px;
+}
+
+.panel h3 {
+	margin-top: 5px;
+}
+
+.carousel {
+	background-color: transparent;
+}
+
+
+
+div#myCarousel {
+    margin-top: -220px;
+}
+
+html, body {
+  height: 100%;
+}
+
+.navbar-fixed-bottom{
+	margin-top:30px;
+	position: static;
+}
+.footer {
+
+}
+
+
+ 
