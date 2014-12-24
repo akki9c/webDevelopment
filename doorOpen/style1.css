@@ -1,0 +1,60 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  
+  background: #000000;
+}
+/*user-select: none;*/
+/*background: url(bg.jpg);*/
+#cupboard {
+	height: 600px;
+	width: 635px;
+	position: relative;
+	left: 35%;
+	margin-left: -112px;
+	top: 40px;
+	bottom: 40px;
+	perspective: 500;
+	background: url(bg.jpg);
+	background-position: center center;
+	background-size: 95%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#cupboard img {
+	position: inherit;
+	height: 200px;
+	width: 200px;
+	float:left;
+	margin-left: 62px;
+	margin-top: 82px;
+}
+
+
+
+#cupboard .door {
+  position: absolute;
+  width: 317px;
+  height: 100%;
+  background-image: url(door.jpg);
+  transition: transform 1s ease;
+  transform: rotateY(0);
+}
+#cupboard .door#left {
+  transform-origin: top left;
+  left: 0;
+}
+#cupboard .door#right {
+  transform-origin: top right;
+  right: 0;
+}
+#cupboard:hover #left,
+#cupboard.hover #left {
+  transform: rotateY(-90deg);
+}
+#cupboard:hover #right,
+#cupboard.hover #right {
+  transform: rotateY(90deg);
+}
